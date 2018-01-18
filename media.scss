@@ -1,0 +1,164 @@
+$phoneSmall: 320px;
+$phoneMedium: 375px;
+$phoneLarge: 414px;
+$phoneXLarge: 667px;
+$tabletSmall: 768px;
+$tabletMedium: 1024px;
+$tabletLarge: 1366px;
+$desktopSmall: 800px;
+$desktopMedium: 1366px;
+$desktopLarge: 1824px;
+$desktopXLarge: 2560px;
+
+@mixin phoneSmallMediaFrom {
+  @media (min-width: #{$phoneSmall}) {
+    @content;
+  }
+}
+
+@mixin phoneMediumMediaFrom {
+  @media (min-width: #{$phoneMedium}) {
+    @content;
+  }
+}
+
+@mixin phoneLargeMediaFrom {
+  @media (min-width: #{$phoneLarge}) {
+    @content;
+  }
+}
+
+@mixin phoneXLargeMediaFrom {
+  @media (min-width: #{$phoneXLarge}) {
+    @content;
+  }
+}
+
+@mixin tabletSmallMediaFrom {
+  @media (min-width: #{$tabletSmall}) {
+    @content;
+  }
+}
+
+@mixin tabletMediumMediaFrom {
+  @media (min-width: #{$tabletMedium}) {
+    @content;
+  }
+}
+
+@mixin tabletLargeMediaFrom {
+  @media (min-width: #{$tabletLarge}) {
+    @content;
+  }
+}
+
+@mixin desktopSmallMediaFrom {
+  @media (min-width: #{$desktopSmall}) {
+    @content;
+  }
+}
+
+@mixin desktopMediumMediaFrom {
+  @media (min-width: #{$desktopMedium}) {
+    @content;
+  }
+}
+
+@mixin desktopLargeMediaFrom {
+  @media (min-width: #{$desktopLarge}) {
+    @content;
+  }
+}
+
+@mixin desktopXLargeMediaFrom {
+  @media (min-width: #{$desktopXLarge}) {
+    @content;
+  }
+}
+
+// To
+
+@mixin phoneSmallMediaTo {
+  @media (max-width: #{$phoneSmall - 1}) {
+    @content;
+  }
+}
+
+@mixin phoneMediumMediaTo {
+  @media (max-width: #{$phoneMedium - 1}) {
+    @content;
+  }
+}
+
+@mixin phoneLargeMediaTo {
+  @media (max-width: #{$phoneLarge - 1}) {
+    @content;
+  }
+}
+
+@mixin phoneXLargeMediaTo {
+  @media (max-width: #{$phoneXLarge - 1}) {
+    @content;
+  }
+}
+
+@mixin tabletSmallMediaTo {
+  @media (max-width: #{$tabletSmall - 1}) {
+    @content;
+  }
+}
+
+@mixin tabletMediumMediaTo {
+  @media (max-width: #{$tabletMedium - 1}) {
+    @content;
+  }
+}
+
+@mixin tabletLargeMediaTo {
+  @media (max-width: #{$tabletLarge - 1}) {
+    @content;
+  }
+}
+
+@mixin desktopSmallMediaTo {
+  @media (max-width: #{$desktopSmall - 1}) {
+    @content;
+  }
+}
+
+@mixin desktopMediumMediaTo {
+  @media (max-width: #{$desktopMedium - 1}) {
+    @content;
+  }
+}
+
+@mixin desktopLargeMediaTo {
+  @media (max-width: #{$desktopLarge - 1}) {
+    @content;
+  }
+}
+
+@mixin desktopXLargeMediaTo {
+  @media (max-width: #{$desktopXLarge - 1}) {
+    @content;
+  }
+}
+
+
+// RANGE
+
+@mixin rangeTabletMediumTabletLarge {
+  @media only screen and (min-width: $tabletMedium) and (max-width: $desktopMedium) {
+    @content;
+  }
+}
+@mixin rangeTabletLargeDesktopMedium {
+  @media only screen and (min-width: $desktopMedium) and (max-width: $desktopLarge) {
+    @content;
+  }
+}
+@mixin rangeDesktopMediumDesktopLarge {
+  @media only screen and (min-width: $desktopLarge) and (max-width: $desktopXLarge) {
+    @content;
+  }
+}

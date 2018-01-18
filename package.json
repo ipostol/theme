@@ -1,0 +1,11 @@
+{
+  "name": "bidstack-theme",
+  "version": "1.0.0",
+  "description": "This is package for styles benefits",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bidstackcom/bidstack-theme.git"
+  },
+  "author": "Postol Ivan",
+  "license": "ISC"
+}
